@@ -1,0 +1,16 @@
+{
+  "item.firstprotomod.ruby": "Ruby",
+  "item.firstprotomod.raw_ruby": "Raw ruby",
+  "item.firstprotomod.test_heart": "Test heart",
+  "item.firstprotomod.test_sword": "Test Sword",
+  "item.firstprotomod.strawberry": "Strawberry",
+
+
+  "block.firstprotomod.raw_ruby_block": "Raw ruby block",
+  "block.firstprotomod.ruby_block": "Ruby block",
+  "block.firstprotomod.ruby_ore": "Ruby ore",
+  "block.firstprotomod.sound_block": "Sound block",
+
+
+  "creativetab.firstprotomod_tab": "Test mod"
+}
