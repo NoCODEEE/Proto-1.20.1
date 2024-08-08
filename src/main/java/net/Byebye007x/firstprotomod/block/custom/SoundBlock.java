@@ -21,7 +21,7 @@ public class SoundBlock extends Block {
     @Override
     public @NotNull InteractionResult use(@NotNull BlockState pState, Level pLevel, @NotNull BlockPos pPos,
                                           @NotNull Player pPlayer, @NotNull InteractionHand pHand, @NotNull BlockHitResult pHit) {
-        pLevel.playSound(pPlayer, pPos, SoundEvents.DRAGON_FIREBALL_EXPLODE, SoundSource.BLOCKS, 1f, 1f);
+        pLevel.playSound(pPlayer, pPos, SoundEvents.ANVIL_USE, SoundSource.BLOCKS, 1f, 1f);
         return InteractionResult.SUCCESS;
     }
 }
