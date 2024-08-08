@@ -28,6 +28,7 @@ public class ModCreativeModetab {
                         output.accept(ModItems.TEST_HEART.get());
                         output.accept(ModItems.TEST_SWORD.get());
                         output.accept(ModItems.STRAWBERRY.get());
+                        output.accept(ModItems.PINE_CONE.get());
 
                         //Blocks
                         output.accept(Modblocks.RUBY_ORE.get());

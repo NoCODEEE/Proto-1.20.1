@@ -4,6 +4,7 @@
   "item.firstprotomod.test_heart": "Test heart",
   "item.firstprotomod.test_sword": "Test Sword",
   "item.firstprotomod.strawberry": "Strawberry",
+  "item.firstprotomod.pine_cone": "Pine Cone",
 
 
   "block.firstprotomod.raw_ruby_block": "Raw ruby block",
@@ -11,6 +12,6 @@
   "block.firstprotomod.ruby_ore": "Ruby ore",
   "block.firstprotomod.sound_block": "Sound block",
 
-
+  "tooltip.firstprotomod.test_sword.tooltip": "Shooting arrows up your Ass!",
   "creativetab.firstprotomod_tab": "Test mod"
 }
