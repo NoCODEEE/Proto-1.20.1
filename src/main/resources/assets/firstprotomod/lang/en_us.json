@@ -1,0 +1,46 @@
+{
+  "item.firstprotomod.ruby": "Ruby",
+  "item.firstprotomod.raw_ruby": "Raw ruby",
+  "item.firstprotomod.test_heart": "Test heart",
+  "item.firstprotomod.test_sword": "Test Sword",
+  "item.firstprotomod.strawberry": "Strawberry",
+  "item.firstprotomod.pine_cone": "Pine Cone",
+  "item.firstprotomod.ruby_sword": "Ruby sword",
+  "item.firstprotomod.ruby_pickaxe": "Ruby pickaxe",
+  "item.firstprotomod.ruby_axe": "Ruby axe",
+  "item.firstprotomod.ruby_shovel": "Ruby shovel",
+  "item.firstprotomod.ruby_hoe": "Ruby hoe",
+  "item.firstprotomod.ruby_helmet": "Ruby helmet",
+  "item.firstprotomod.ruby_chestplate": "Ruby chestplate",
+  "item.firstprotomod.ruby_leggings": "Ruby leggings",
+  "item.firstprotomod.ruby_boots": "Ruby boots",
+  "item.firstprotomod.strawberry_seeds": "Strawberry seeds",
+  "item.firstprotomod.ploy_scythe": "Ploy's Scythe",
+  "item.firstprotomod.rhino_spawn_egg": "Rhino Spawn Egg",
+
+
+  "block.firstprotomod.raw_ruby_block": "Raw ruby block",
+  "block.firstprotomod.ruby_block": "Ruby block",
+  "block.firstprotomod.ruby_ore": "Ruby ore",
+  "block.firstprotomod.sound_block": "Sound block",
+  "block.firstprotomod.ruby_stair": "Ruby stair",
+  "block.firstprotomod.ruby_slab": "Ruby slab",
+  "block.firstprotomod.ruby_button": "Ruby button",
+  "block.firstprotomod.ruby_pressure_plate": "Ruby pressure plate",
+  "block.firstprotomod.ruby_fence": "Ruby fence",
+  "block.firstprotomod.ruby_fence_gate": "Ruby fence gate",
+  "block.firstprotomod.ruby_wall": "Ruby wall",
+  "block.firstprotomod.ruby_door": "Ruby door",
+  "block.firstprotomod.ruby_trapdoor": "Ruby trapdoor",
+
+  "tooltip.firstprotomod.test_sword.1": "LEGENDARY",
+  "tooltip.firstprotomod.test_sword.2": "1000 Damages",
+  "tooltip.firstprotomod.test_sword.3": "Shooting arrows up your Ass!",
+  "tooltip.firstprotomod.test_sword.4": "Unobtainable",
+
+  "tooltip.firstprotomod.ploy_scythe1": "Art Made By Ploy!",
+  "tooltip.firstprotomod.ploy_scythe2": "Natural strength II",
+
+  "sounds.firstprotomod.custom_sword_swing": "Custom sword swing",
+  "creativetab.firstprotomod_tab": "Test mod"
+}
