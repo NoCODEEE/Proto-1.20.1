@@ -3,6 +3,7 @@ package net.Byebye007x.firstprotomod.networking.packet;
 import net.Byebye007x.firstprotomod.entity.custom.SwordWaveEntity;
 import net.Byebye007x.firstprotomod.magic.PlayerMagicProvider;
 import net.Byebye007x.firstprotomod.networking.ModPackages;
+import net.Byebye007x.firstprotomod.magic.PlayerMagicUtils;
 import net.Byebye007x.firstprotomod.sound.ModSounds;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -17,6 +18,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.network.NetworkEvent;
+
 
 import java.util.function.Supplier;
 
@@ -45,7 +47,9 @@ public class UseMagicC2SPacket {
 
             //Use Magic
             player.getCapability(PlayerMagicProvider.PLAYER_MP).ifPresent(playerMagic -> {
-                if (playerMagic.getMp() > 0) {
+                int mp = PlayerMagicUtils.getEffectiveMp(player, playerMagic);
+
+                if (mp > 0) {
                     playerMagic.subMp(1);
                     SwordWaveEntity swordWave = new SwordWaveEntity(level, player,
                             0d, 0.0d, 0d);

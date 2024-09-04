@@ -26,11 +26,11 @@ public class MpHUD {
         Minecraft mc = Minecraft.getInstance();
         Player player = mc.player;
 
-        if (player.isCreative() || player.isSpectator()) {
-            if (event.getOverlay().overlay() == CUSTOM_MP_BAR) {
-                event.setCanceled(true);
-            }
-        }
+//        if (player.isCreative() || player.isSpectator()) {
+//            if (event.getOverlay().overlay() == CUSTOM_MP_BAR) {
+//                event.setCanceled(true);
+//            }
+//        }
     }
 
     public static final IGuiOverlay CUSTOM_MP_BAR = ((gui, guiGraphics, partialTick, screenWidth, screenHeight) -> {
@@ -42,6 +42,10 @@ public class MpHUD {
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, MP_BAR);
 
+
+//        guiGraphics.blit(HEALTH_BAR, x, y, 0, 36, (int) ((remainingHealth() * scale) - 1), (int) (24 * scale), 256, 64);
+//        //empty bar
+//        guiGraphics.blit(HEALTH_BAR, x, y, 0, 0, (int) (257 * scale), (int) (27 * scale), 256, 28);
             //value
         guiGraphics.blit(MP_BAR, x, y, 0, 36, (int) ((remainingValue() * scale) - 1), (int) (24 * scale), 256, 64);
             //empty bar

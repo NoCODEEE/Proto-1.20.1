@@ -5,6 +5,7 @@ import net.Byebye007x.firstprotomod.enchantment.ModEnchantments;
 import net.Byebye007x.firstprotomod.entity.custom.SwordWaveEntity;
 import net.Byebye007x.firstprotomod.magic.PlayerMagicProvider;
 import net.Byebye007x.firstprotomod.networking.ModPackages;
+import net.Byebye007x.firstprotomod.magic.PlayerMagicUtils;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -44,7 +45,9 @@ public class UseDashEnchantmentC2SPacket {
 
             //Use Dash
             player.getCapability(PlayerMagicProvider.PLAYER_MP).ifPresent(playerMagic -> {
-                if (playerMagic.getMp() > 0) {
+                int mp = PlayerMagicUtils.getEffectiveMp(player, playerMagic);
+
+                if (mp > 0) {
                     if (DashEnchantment.canDash(player)) {
                         playerMagic.subMp(1);
                         level.playSeededSound(null, player.getX(), player.getY(), player.getZ(),

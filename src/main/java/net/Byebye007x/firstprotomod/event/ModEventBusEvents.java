@@ -1,6 +1,7 @@
 package net.Byebye007x.firstprotomod.event;
 
 import net.Byebye007x.firstprotomod.ProtoMod;
+import net.Byebye007x.firstprotomod.client.ClientMpData;
 import net.Byebye007x.firstprotomod.enchantment.DashEnchantment;
 import net.Byebye007x.firstprotomod.entity.ModEntities;
 import net.Byebye007x.firstprotomod.entity.custom.GFEntity;
@@ -89,7 +90,9 @@ public class ModEventBusEvents {
                 tick++;
 
                 if (event.player instanceof ServerPlayer player) {
-//                    System.out.println("tick.ModBus: " + tick + "\n");
+                    System.out.println("maxhp: " + player.getMaxHealth() + "\n");
+                    System.out.println("maxmp: " + ClientMpData.getPlayerMaxMp() + "\n");
+
 
                     event.player.getCapability(PlayerMagicProvider.PLAYER_MP).ifPresent(playerMagic -> {
                         ModPackages.sendToPlayer(new MagicDataSyncC2SPacket(playerMagic.getMp(), playerMagic.getMAX_MP(), playerMagic.getMpRegen()), player);
